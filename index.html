@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initia-scale=1.0">
+     <title> Galerie responsive</title>
+     <style>
+        h2{
+            text-align: center;
+        }
+        body{
+         font-family:sans-serif;
+         
+        }
+        .grid{
+            display: grid;
+        
+            grid-template-columns: repeat(5, minmax(150px, 200px));
+            grid-template-rows: repeat(2, minmax(100px,150px));
+            column-gap:60px;
+            row-gap:40px;
+            
+        }
+        p{
+            font-size:20px;
+        }
+        .box{
+            height:120px;
+            background-color: rgb(39, 118, 172);
+            background-size:150px;
+            background-image: url("imagine/placeholder-image.png");
+            background-repeat:no-repeat;
+            background-position: 25px;
+            
+        }
+        .container{
+            width:200px;
+            height:150px;
+            background-color:gainsboro;
+            
+            border-radius: 20%;
+        }
+     .text{
+        text-align: center;
+        
+     }
+      
+     @media screen and (max-width: 1024px) {
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+            }
+       }   
+ 
+    @media screen and (max-width: 768px) {
+        .grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+ 
+    @media screen and (max-width: 414px) {
+        .grid {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+     
+     </style>
+    </head>
+    <body>
+        <h2>Gallery heading</h2>
+
+       <div class="grid"> 
+            <div class="container">
+                <div id="box1" class="box"></div>
+                <div class="text">Imagine 1</div>
+            </div>
+            <div class="container">
+                <div id="box2" class="box"></div>
+                <div class="text">Imagine 2</div>
+            </div>
+            <div class="container">
+                <div id="box3" class="box"></div>
+                <div class="text">Imagine 3</div>
+            </div>
+            <div class="container">
+                <div id="box4" class="box"></div>
+                <div class="text">Imagine 4</div>
+            </div>
+            <div class="container">
+                <div id="box5" class="box"></div>
+                <div class="text">Imagine 5</div>
+            </div>
+            <div class="container">
+                <div id="box6" class="box"></div>
+                <div class="text">Imagine 6</div>
+            </div>
+            <div class="container">
+                <div id="box7" class="box"></div>
+                <div class="text">Imagine 7</div>
+            </div>
+            <div class="container">
+                <div id="box8" class="box"></div>
+                <div class="text">Imagine 8</div>
+            </div>
+            <div class="container">
+                <div id="box9" class="box"></div>
+                <div class="text">Imagine 9</div>
+            </div>
+            <div class="container">
+                <div id="box10" class="box"></div>
+                <div class="text">Imagine 10</div>
+            </div>
+            
+         </div>
+        
+          </div>
+       <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis nostrum perspiciatis, ea suscipit repudiandae adipisci sunt. Ab perferendis at, ad dolorem vitae obcaecati harum reiciendis aspernatur cum officiis iusto libero nihil itaque animi facilis! Vitae, quidem necessitatibus reiciendis perferendis sit libero expedita atque aspernatur doloribus deserunt nisi veniam quaerat, quos sunt natus corporis incidunt velit aut obcaecati fuga magnam omnis.</p>
+    </body>
+
+</html>
